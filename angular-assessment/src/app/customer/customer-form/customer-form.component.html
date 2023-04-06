@@ -1,0 +1,44 @@
+<div class="overlay">
+  <div class="overlay-content">
+    <div class="">
+      <h2 class="form-heading">{{isEdit? 'Edit':'Add'}}Customer</h2>
+    </div>
+    <form [formGroup]="customerForm" (ngSubmit)="onSubmit()" class="add-customer-form d-flex">
+      <div class="padding-20">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" class="form-control" formControlName="name" placeholder="Enter Name">
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <input type="text" id="description" class="form-control" formControlName="description"
+            placeholder="Enter Description">
+        </div>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select id="status" class="form-control" formControlName="status">
+            <option value=""></option>
+            <option value="Open" class="open-bedge">Open</option>
+            <option value="Error">Error</option>
+            <option value="Success">Success</option>
+            <option value="Inactive">Inactive</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="rate">Rate</label>
+          <input type="number" id="rate" class="form-control" formControlName="rate" placeholder="Enter Rate">
+        </div>
+        <div class="form-group">
+          <label for="balance">Balance</label>
+          <input type="number" id="balance" class="form-control" formControlName="balance" placeholder="Enter Balance">
+        </div>
+      </div>
+      <div class="form-submit-edit-button d-flex">
+        <button type="submit" class="btn btn-primary submit-button"
+          [disabled]="!customerForm.valid">{{isEdit?'Update':'Submit'}}</button>
+        <button type="submit" class="btn btn-primary m-left-20 justify-end cancle-button"
+          (click)="closeForm()">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>

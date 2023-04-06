@@ -1,0 +1,151 @@
+.customer-odd-even:nth-child(even) {
+    background: #EBF0FA;
+}
+
+.customer-data-row {
+    padding: 20px 0;
+}
+
+.table-head {
+    background: #EBF0FA;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.table-head-row {
+    padding: 12px 0;
+}
+
+.fa {
+    cursor: pointer;
+}
+
+.edit-button-design {
+    border: 0;
+    color: #D12953;
+    margin-left: 10px;
+}
+
+.fa-pencil {
+    color: #868FA0;
+}
+
+.data-row {
+    padding-left: 40px;
+}
+
+.name {
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.filter-menu {
+    padding: 8px 12px;
+    border-radius: 6px;
+    width: 110px;
+}
+
+.search-bar {
+    border: 0;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.06), 0px 0px 0px 1px rgba(104, 113, 130, 0.16);
+    margin-right: 20px;
+    border-radius: 6px;
+    padding-left: 10px;
+}
+
+.main-head {
+    padding: 25px 20px;
+    justify-content: space-between;
+}
+
+.statusbar {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 1px rgba(70, 79, 96, 0.16), 0px 2px 5px rgba(89, 96, 120, 0.1);
+    border: 0;
+    border-radius: 6px;
+}
+
+.customer {
+    color: #171C26;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.description {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 200px;
+}
+
+.caption {
+    color: #464F60;
+    font-size: 14px;
+    font-weight: 400px;
+}
+
+.caption-2 {
+    padding-left: 30px;
+    padding-right: 50px;
+}
+
+.caption-3 {
+    padding-left: 0;
+}
+
+.caption-4 {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.open-option {
+    color: #4F5AED;
+}
+
+.error-option {
+    color: #D12953;
+}
+
+.success-option {
+    color: #14804A;
+}
+
+.inactive-option {
+    color: #5A6376;
+}
+
+.open {
+    color: #4F5AED;
+    background-color: #F0F1FA;
+}
+
+.success {
+    color: #14804A;
+    background-color: #E1FCEF;
+}
+
+.inactive {
+    color: #5A6376;
+    background-color: #E9EDF5;
+}
+
+.error {
+    color: red;
+    background-color: #FAF0F3;
+}
+
+.customer-list {
+    overflow: hidden;
+}
+
+.select-caption {
+    padding: 5px 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Start: helper class */
+
+.padding-20 {
+    padding: 20px;
+}

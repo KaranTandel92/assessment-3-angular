@@ -1,0 +1,63 @@
+<div class="customer-list">
+  <div>
+    <div class="main-head d-flex">
+      <select id="statusFilter" [formControl]="statusControl" class="statusbar">
+        <span class="fa fa-filter"></span>
+        <option value="">Status</option>
+        <option value="Open" class="open-option caption-4">Open</option>
+        <option value="Error" class="error-option caption-4">Error</option>
+        <option value="Success" class="success-option caption-4">Success</option>
+        <option value="Inactive" class="inactive-option caption-4">Inactive</option>
+      </select>
+      <div class="d-flex">
+        <input type="text" [formControl]="searchControl" placeholder="Search by name..." class="search-bar">
+        <div class="col">
+          <button (click)="isAdd()" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <table class="table">
+        <thead>
+          <tr class="table-head">
+            <th class="data-row table-head-row">#</th>
+            <th class="name table-head-row">NAME</th>
+            <th class="caption-3 table-head-row">DESCRIPTION</th>
+            <th class="caption-2 table-head-row">STATUS</th>
+            <th class="caption-3 table-head-row">RATE</th>
+            <th class="caption-2 table-head-row">BALANCE</th>
+            <th class="caption-3 table-head-row">ACTION</th>
+          </tr>
+        </thead>
+        <!-- start : table body -->
+        <tbody>
+          <tr *ngFor="let customer of filteredCustomers | search: searchText" class="customer-odd-even">
+            <td class="customer-data-row data-row customer">{{customer.id}}</td>
+            <td class="customer-data-row name customer">{{customer.name}}</td>
+            <td class="customer-data-row caption description">{{customer.description}}</td>
+            <td class="padding-20">
+              <span class="open select-caption" *ngIf="customer.status=='Open'">{{customer.status}}</span>
+              <span class="error select-caption" *ngIf="customer.status=='Error'">{{customer.status}}</span>
+              <span class="success select-caption" *ngIf="customer.status=='Success'">{{customer.status}}</span>
+              <span class="inactive select-caption" *ngIf="customer.status=='Inactive'">{{customer.status}}</span>
+            </td>
+            <td class="customer-data-row caption">{{customer.rate}}</td>
+            <td class="customer-data-row caption-2 caption">{{customer.balance}}</td>
+            <td class="customer-data-row">
+              <a (click)="editCustomer(customer.id)"><span class="fa fa-pencil"></span></a>
+              <a (click)="deleteCustomer(customer.id)" class="edit-button-design"><span class="fa fa-trash"></span></a>
+            </td>
+          </tr>
+        </tbody>
+        <!-- end : table body -->
+      </table>
+      <div *ngIf="!filteredCustomers?.length">
+        No data found...
+      </div>
+    </div>
+  </div>
+  <app-customer-form *ngIf="isAddFrom" (isFromclose)="isFromclose()" (isgetAll)="getCustomers()"
+    [editCustomerData]="editCustomerData"></app-customer-form>
+</div>

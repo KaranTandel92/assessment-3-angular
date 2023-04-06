@@ -1,0 +1,132 @@
+{
+  "customers": [
+    {
+      "name": "Karan",
+      "description": "Lorem",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 2
+    },
+    {
+      "name": "Hiren",
+      "description": "Lorem",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 4
+    },
+    {
+      "name": "Hiren",
+      "description": "Lorem",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 6
+    },
+    {
+      "name": "Hiren",
+      "description": "Lorem",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 8
+    },
+    {
+      "name": "Hiren",
+      "description": "Lorem",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 10
+    },
+    {
+      "name": "Karan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 11
+    },
+    {
+      "name": "Karan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Error",
+      "rate": 700,
+      "balance": 3,
+      "id": 13
+    },
+    {
+      "name": "Chintan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Error",
+      "rate": 700,
+      "balance": 9999,
+      "id": 14
+    },
+    {
+      "name": "Karan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Error",
+      "rate": 700,
+      "balance": 52,
+      "id": 15
+    },
+    {
+      "name": "Hiren",
+      "description": "Lorem",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 6
+    },
+    {
+      "name": "Hiren",
+      "description": "Lorem",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 8
+    },
+    {
+      "name": "Hiren",
+      "description": "Lorem",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 10
+    },
+    {
+      "name": "Karan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Success",
+      "rate": 700,
+      "balance": 3,
+      "id": 11
+    },
+    {
+      "name": "Karan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Error",
+      "rate": 700,
+      "balance": 3,
+      "id": 13
+    },
+    {
+      "name": "Chintan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Error",
+      "rate": 700,
+      "balance": 9999,
+      "id": 14
+    },
+    {
+      "name": "Karan",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla...",
+      "status": "Error",
+      "rate": 700,
+      "balance": 52,
+      "id": 15
+    }
+  ]
+}
